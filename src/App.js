@@ -1,25 +1,21 @@
-import logo from './logo.svg';
+// Import CSS styles for our application
 import './App.css';
 
+// Import the ParkingBoard component
+import ParkingBoard from './ParkingBoard';
+
+// App Component: Main root component of the society parking application
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* Header title */}
+      <h1>Green Meadows Society</h1>
+
+      {/* Render the ParkingBoard component */}
+      <ParkingBoard />
     </div>
   );
 }
 
+// Export App so index.js can render it
 export default App;
